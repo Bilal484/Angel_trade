@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Review Card</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .stars {
+        margin-bottom: 10px;
+    }
+
+    .stars i {
+        font-size: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+        color: #000000;
+    }
+
+    .card-subtitle {
+        font-size: 1.2rem;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        color: #000000;
+    }
+
+    .card-link {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #28a745;
+    }
+
+    .card-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="card p-3 my-3" style="width: 18rem;">
+        <div class="d-flex align-items-center">
+            <div class="stars">
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+                <i class="bi bi-star-fill text-success"></i>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <h6 class="card-title mt-2 mb-1">Mohamed Conteh, 1 day ago</h6>
+            <h5 class="card-subtitle mb-2">My experience</h5>
+            <p class="card-text">My experience. Unlike other trading platforms that pressure you to deposit funds,
+                Anders Trading empowers me to choose when to contact them. This puts me in control of my trading
+                experience and flexibility...</p>
+            <a href="#" class="card-link text-success">Read more</a>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
