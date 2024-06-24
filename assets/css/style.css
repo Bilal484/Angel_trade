@@ -6,6 +6,9 @@
     --color: white;
     --bg_sec_header: #222222;
     --font-family: "Red Hat Display", sans-serif;
+    --text-color: #222;
+    --color-light: #e0e0e0;
+    --border-color: #2b2b2b;
 }
 
 * {
@@ -14,15 +17,64 @@
     box-sizing: border-box;
 }
 
-/* ******************** Second  Top Header  ******************* */
+/* ******************** Main Header  ******************* */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #dde4eb;
+    padding: 15px 0px;
+
+    .navbar-nav {
+        gap: 1.3rem;
+
+        .nav-link {
+            font-size: 13.5px !important;
+            color: #222;
+            font-weight: 500;
+            font-family: var(--font-family);
+            transition: all .3s ease-in;
+
+            &:hover {
+                color: #696969;
+            }
+        }
+
+    }
+
+    .lang_sel button {
+        font-family: var(--font-family);
+        font-weight: 700;
+        color: #fff;
+        background: #27b384;
+        border: 1px solid #27b384;
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .flags img {
+        width: 38px;
+        margin-right: 1rem;
+    }
+}
+
+
+/* ******************** Secondary Header  ******************* */
 .sec_top_header {
     background-color: var(--bg_sec_header);
-    padding: 4px;
+    padding: 10px;
     font-family: var(--font-family);
     color: var(--color);
+    align-items: center;
+    gap: 10px;
 
+    h5,
     h6 {
-        margin: 10px;
+        margin-bottom: 0px;
     }
 
     .same_icons {
@@ -35,6 +87,12 @@
         }
     }
 
+    .review {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
 }
 
 /*  ********************* Main Section *********************** */
@@ -44,15 +102,19 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
 
     h2 {
         font-family: var(--font-family);
-        color: black;
-        font-weight: 600;
-
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 34px;
     }
 
     button {
+        margin-top: 10px;
         background-color: var(--bg_button);
         width: 300px;
         color: var(--color);
@@ -60,7 +122,6 @@
         padding: 15px;
         border: 1px solid var(--bg_button);
         border-radius: 10px;
-
     }
 
     button:hover {
@@ -76,38 +137,88 @@
         padding: 10px;
         width: 100%;
 
-        i {
-            margin-top: 4px;
+        .card_section_list {
+            display: flex;
+
+            i {
+                margin-top: 4px;
+            }
+
+            p {
+                font-family: var(--font-family);
+
+            }
         }
+
+    }
+
+    hr {
+        opacity: .15;
     }
 }
 
 .main_section_content_2 {
+    padding: 20px;
+
     img {
         width: 100%;
     }
 }
 
 /* **********************  Second table Portion **************** */
-.flags {
-    width: 100px;
-    height: auto;
-}
+.trading_store_main {
+    background: var(--bg_sec_header);
 
-.container {
-    background-color: #333;
-    padding: 30px;
-    border-radius: 10px;
-}
+    .trading_store_main_title {
+        font-size: 26px;
+        font-weight: 700;
+        font-family: var(--font-family);
+    }
 
-.text-white {
-    color: #ffffff;
-}
+    .trading_store_boxs {
+        .box_parent{
+            padding: 0px;
 
-.text-success {
-    color: #27b384 !important;
-}
+        .box {
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            border-color: var(--border-color);
+            padding: 15px;
+        }
+        
+        .box_headings{
+            font-size: 15px !important;
+        }
+        .green_txt{
+            color: #2a9e1c;
+            font-weight: 700;
+            font-family: var(--font-family);
+            margin-bottom: 2px;
+        }
+        .red_txt{
+            color: #c71f1f;
+            font-weight: 700;
+            font-family: var(--font-family);
+        }
 
-.text-danger {
-    color: #ff0000 !important;
+        .with_icons{
+
+            i{
+                color: var(--bg_button);
+                font-size: 22px; 
+            }
+            p{
+                font-size: 14px;
+                color: #aeaeae;
+                margin-top: 1.2rem;
+            }
+        }
+    }
+    
+    .updated_date{
+        font-size: 14px;
+        font-weight: 500;
+        font-family: var(--font-family);
+    }
+}
 }
