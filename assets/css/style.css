@@ -23,6 +23,7 @@
     position: sticky;
     top: 0;
     bottom: 0;
+    z-index: 100;
     border-width: 0 0 1px;
     border-style: solid;
     border-color: #dde4eb;
@@ -176,49 +177,133 @@
     }
 
     .trading_store_boxs {
-        .box_parent{
+        .box_parent {
             padding: 0px;
 
-        .box {
-            border-style: solid;
-            border-width: 0 1px 1px 0;
-            border-color: var(--border-color);
-            padding: 15px;
-        }
-        
-        .box_headings{
-            font-size: 15px !important;
-        }
-        .green_txt{
-            color: #2a9e1c;
-            font-weight: 700;
-            font-family: var(--font-family);
-            margin-bottom: 2px;
-        }
-        .red_txt{
-            color: #c71f1f;
-            font-weight: 700;
-            font-family: var(--font-family);
+            .box {
+                border-style: solid;
+                border-width: 0 1px 1px 0;
+                border-color: var(--border-color);
+                padding: 15px;
+            }
+
+            .box_headings {
+                font-size: 15px !important;
+            }
+
+            .green_txt {
+                color: #2a9e1c;
+                font-weight: 700;
+                font-family: var(--font-family);
+                margin-bottom: 2px;
+            }
+
+            .red_txt {
+                color: #c71f1f;
+                font-weight: 700;
+                font-family: var(--font-family);
+            }
+
+            .with_icons {
+
+                i {
+                    color: var(--bg_button);
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #aeaeae;
+                    margin-top: 1.2rem;
+                }
+            }
         }
 
-        .with_icons{
-
-            i{
-                color: var(--bg_button);
-                font-size: 22px; 
-            }
-            p{
-                font-size: 14px;
-                color: #aeaeae;
-                margin-top: 1.2rem;
-            }
+        .updated_date {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: var(--font-family);
         }
-    }
-    
-    .updated_date{
-        font-size: 14px;
-        font-weight: 500;
-        font-family: var(--font-family);
     }
 }
+
+
+/* **************************** Card Grid *********************** */
+
+.card_icons_top {
+    i {
+        background-color: var(--bg_button);
+        color: var(--color);
+        padding: 6px;
+        font-size: 12px;
+
+    }
+}
+
+.grid_view-section {
+    background-color: rgba(182, 196, 210, .4);
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+
+
+}
+
+.card {
+    box-shadow: 0 1px 0 0 rgba(182, 196, 210, .4);
+    border: none !important;
+    margin: 5px;
+
+
+    .card-body {
+        .card_icons {
+            i {
+                background-color: var(--bg_button);
+                color: var(--color);
+                padding: 3px;
+                font-size: 10px;
+                align-items: center;
+            }
+        }
+
+        .card-title {
+            h6 {
+                font-size: 14px;
+                font-family: var(--font-family);
+                font-weight: 400;
+                margin-top: 10px;
+            }
+
+            p {
+                font-family: var(--font-family);
+                font-size: 13px;
+                color: #191919;
+                margin-bottom: -2px;
+
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--bg_button);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+
+            }
+
+        }
+
+        /* .card-title::before {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(248, 249, 250) 85%, rgb(248, 249, 250) 100%);
+            bottom: 0;
+            content: "";
+            font-size: 0;
+            height: 50px;
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+        } */
+
+    }
 }
