@@ -25,7 +25,12 @@
     .lang_sel{
         flex-wrap: wrap;
     }
-   
+    .main_section_content_2 {
+    
+        img {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 500px){
