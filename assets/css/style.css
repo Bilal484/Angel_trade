@@ -50,10 +50,15 @@
         font-weight: 700;
         color: #fff;
         background: #27b384;
-        border: 1px solid #27b384;
+        border: 2px solid #27b384;
         border-radius: 8px;
-        padding: 12px 16px;
+        padding: 10px 16px;
         font-size: 14px;
+        transition: all .3s ease-in;
+        &:hover{
+            background: transparent;
+            color: var(--bg_button);
+        }
     }
 
     .flags img {
