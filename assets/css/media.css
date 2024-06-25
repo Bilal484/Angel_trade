@@ -17,7 +17,7 @@
 
 @media (max-width: 500px){
     .navbar{
-        padding: 0px;
+        padding: 10px;
     }
     .container-fluid{
         padding: 0px !important;
@@ -41,5 +41,11 @@
     }
     .effect_text::after{
         display: none;
+    }
+    #btn-signup{
+        width: auto;
+    }
+    #card-res{
+        margin-top: 10px;
     }
 }
