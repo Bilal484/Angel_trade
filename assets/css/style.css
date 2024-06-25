@@ -27,7 +27,7 @@
     border-style: solid;
     border-color: #dde4eb;
     padding: 15px 0px;
-
+    z-index: 100;
     .navbar-nav {
         gap: 1.3rem;
 
@@ -221,4 +221,46 @@
         font-family: var(--font-family);
     }
 }
+}
+
+/* **********************  Testimonial Portion **************** */
+.testimonial_reviews{
+
+    .testimonial_reviews_heading{
+        font-size: 32px;
+        font-family: var(--font-family);
+        font-weight: 700;
+    }
+}
+.testimonial_reviews_cards {
+    padding-bottom: 2rem;
+    .card{
+
+        transition: all .2s ease-in-out;
+        border-color: var(--color-light);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        &:hover{
+            cursor: pointer;
+            transform: translateY(-10px);
+        }
+    }
+    .card .card-body 
+    {
+
+    blockquote{
+        font-family: var(--font-family);
+        text-align: justify;
+        font-weight: 500;
+    }
+    img{
+
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    figcaption h4,h5{
+        font-family: var(--font-family);
+        font-weight: 700;
+    }
+    }
 }
