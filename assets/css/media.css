@@ -1,5 +1,17 @@
 @media (max-width: 990px){
 
+    .navbar{
+        .flags{
+            margin-top: 10px;
+        }
+        .flags img{
+            width: 35px;
+        }
+        .lang_sel button{
+            padding: 6px;
+            font-size: 14px;
+        }
+    }
     .navbar-toggler{
         border: none;
     }
@@ -13,6 +25,7 @@
     .lang_sel{
         flex-wrap: wrap;
     }
+   
 }
 
 @media (max-width: 500px){
@@ -47,5 +60,8 @@
     }
     #card-res{
         margin-top: 10px;
+    }
+    .accordion{
+        width: 100%;
     }
 }
