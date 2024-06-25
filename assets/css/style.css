@@ -28,7 +28,7 @@
     border-style: solid;
     border-color: #dde4eb;
     padding: 15px 0px;
-
+    z-index: 100;
     .navbar-nav {
         gap: 1.3rem;
 
