@@ -89,25 +89,27 @@
 }
 
 /* **********************  Second table Portion **************** */
-.flags {
-    width: 100px;
-    height: auto;
-}
+.sec_table_section {
+    background-color: #222222;
+    color: var(--color);
+    .text-white {
+        color: #ffffff;
+    }
 
-.container {
-    background-color: #333;
-    padding: 30px;
-    border-radius: 10px;
-}
+    .table-dark {
+        background-color: #333;
+    }
 
-.text-white {
-    color: #ffffff;
-}
+    .table-dark th,
+    .table-dark td {
+        border-color: #444;
+    }
 
-.text-success {
-    color: #27b384 !important;
-}
+    .text-success {
+        color: #27b384 !important;
+    }
 
-.text-danger {
-    color: #ff0000 !important;
+    .text-danger {
+        color: #ff0000 !important;
+    }
 }
